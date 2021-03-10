@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CourseraFirstApp</string>
+    <string name="kilometers">Kilometers</string>
+    <string name="miles">Miles</string>
+    <string name="please_in_put_kilometers">Please in put Kilometers</string>
+    <string name="please_input_miles">Please input Miles</string>
+    <string name="convert_km_into_miles">Convert Km into Miles</string>
+    <string name="convert_miles_into_km">Convert Miles into KM</string>
+</resources>

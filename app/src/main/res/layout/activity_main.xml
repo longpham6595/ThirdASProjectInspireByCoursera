@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="43dp"
+        android:text="@string/kilometers"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/ml"
+        app:layout_constraintEnd_toStartOf="@+id/km_ip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="94dp"
+        android:text="@string/miles"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ml_ip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352" />
+
+    <EditText
+        android:id="@+id/km_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="162dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="19dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/please_in_put_kilometers"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/ml_ip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/km"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ml_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="@string/please_input_miles"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/km_cvt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ml"
+        app:layout_constraintTop_toBottomOf="@+id/km_ip"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/km_cvt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="11dp"
+        android:text="@string/convert_km_into_miles"
+        android:textColor="#FFE500"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/mk_cvt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ml_ip" />
+
+    <Button
+        android:id="@+id/mk_cvt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="327dp"
+        android:text="@string/convert_miles_into_km"
+        android:textColor="#02E2FF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/km_cvt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
